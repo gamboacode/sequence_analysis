@@ -317,12 +317,12 @@ class MarkovChain:
         rna_seq = ""
         for _ in range(self.k):
             protein = random_event(self.zeroth)
-            rna_seq += protein
+            rna_seq += protein # type: ignore
         
         for _ in range(left):
             kmer = rna_seq[-self.k:]
             protein = random_event(self.kth[kmer])
-            rna_seq += protein
+            rna_seq += protein # type: ignore
         
         return rna_seq
 
