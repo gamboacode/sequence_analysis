@@ -1,3 +1,5 @@
 # sequence_analysis
 
 In this module, we present an implementation of Markov Chains with context. These mathematical objects are useful when performing DNA sequence analysis. We build the Markov Chains from "scratch" and provide methods to generate sequences with respect to the context distributions. Moreover, it is also possible to construct Markov Chains without any context, also known as zero-order Markov Chains. Finally, we also provide two simple functions to calculate the Kullback-Leibler divergence and find the stationary distribution of a transition matrix for a 1-order Markov Chain.
+
+We use Python 3.12.4 and Numpy 2.3.1.

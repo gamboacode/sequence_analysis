@@ -1,4 +1,3 @@
-from collections import defaultdict
 import numpy as np
 import random
 import re
@@ -89,7 +88,7 @@ def get_probability_dict():
     The probabilities are taken over the space of codons that represent an amino acid.
     """
     dic_init = {amino:[] for amino in get_dict_list()}
-    with open("table.html", "r") as my_file:
+    with open("table.txt", "r") as my_file:
         for line in my_file:
             patt_line = re.findall(r'([A-Z]{3,3}) ([A-Z]|\*).{11}(\(\s?\d*\))', line)
             if len(patt_line) != 4:
